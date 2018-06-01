@@ -1,0 +1,69 @@
+#                
+#  ▛▌▛▘▛▛▌▛▌▛▘▛▌▛▌
+#  ▌▌▙▖▌▌▌▙▌▙▖▙▌▙▌
+#         ▌   ▌ ▌ 
+#
+
+# Mpd settings
+mpd_music_dir = "~/Music"
+mpd_host = "127.0.0.1"
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+# Playlist
+browser_playlist_prefix = "$2plist »$9 "
+selected_item_prefix = "$b"
+selected_item_suffix = "/$b"
+song_list_format = "$(blue)%A$(end) $(white)-$(end) $(white)%t$(end) $R$(blue)%l $(end)"
+#" $0$8$8%l$0$8 $1|$7 $7%a$7 $6%t$1 $R $1%b$1"
+song_status_format = "{%a - }{%t - }{%b}"
+song_columns_list_format = "(25)[blue]{A} (15)[white]{t}  (6f)[blue]{l}"
+playlist_display_mode = "classic" (classic/columns)
+
+# Progressbar
+progressbar_look = "───"
+#progressbar_look = "━━─"
+#progressbar_look = "━━━"
+#progressbar_look = "███"
+#progressbar_look = "   "
+#progressbar_look = "▇▇ "
+#progressbar_look = "∘∙ "
+#progressbar_look = "▄▄ "
+#progressbar_look = "─╼ "
+#progressbar_look = "━  "
+#progressbar_look = "─╼ "
+
+# Colors
+colors_enabled = "yes"
+state_line_color = "white"
+state_flags_color = "white"
+main_window_color = "white"
+color1 = "white"
+color2 = "black"
+progressbar_color = "black"
+progressbar_elapsed_color = "white"
+statusbar_color = "blue"
+empty_tag_color = "yellow"
+
+# Visualizer
+#visualizer_color = "blue"
+#visualizer_look = "●▍"
+#visualizer_look = "x␌"
+visualizer_look = "─┃"
+#visualizer_look = "●▋"
+#visualizer_look = "┃┃"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30"
+visualizer_in_stereo = "no"
+visualizer_type = "wave" (spectrum/wave/ellipse)
+
+# Misc
+incremental_seeking = "yes"
+header_visibility = "no"
+titles_visibility = "no"
+enable_window_title = "no"
+statusbar_visibility = "no"
+discard_colors_if_item_is_selected = "yes"
+allow_for_physical_item_deletion="yes"

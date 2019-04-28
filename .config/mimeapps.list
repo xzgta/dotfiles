@@ -1,0 +1,9 @@
+[Added Associations]
+text/plain=mousepad.desktop;
+audio/mpeg=parole.desktop;
+video/mp4=parole.desktop;
+application/xml=sublime_text.desktop;
+application/x-perl=sublime_text.desktop;
+application/x-7z-compressed=org.gnome.FileRoller.desktop;
+text/x-python=sublime_text.desktop;
+application/x-shellscript=sublime_text.desktop;

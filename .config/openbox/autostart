@@ -1,0 +1,5 @@
+dunst -config ~/.config/dunst/dunstrc &
+gnome-settings-daemon &
+sh ~/.fehbg &
+polybar yuu-openbox &
+sh ~/.config/openbox/applets &

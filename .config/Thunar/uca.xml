@@ -1,0 +1,67 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>Terminal</icon>
+	<name>Open Terminal here</name>
+	<unique-id>1556291287988635-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>Terminal</icon>
+	<name>Open Terminal (as root)</name>
+	<unique-id>1556291287988857-2</unique-id>
+	<command>gksudo -k &quot;exo-open --working-directory %f --launch TerminalEmulator&quot;</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>emblem-symbolic-link</icon>
+	<name>Create symlink</name>
+	<unique-id>1556291287988959-3</unique-id>
+	<command>ln -s %f &apos;Link to %n&apos;</command>
+	<description>Creates a link to a folder or file</description>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+</action>
+<action>
+	<icon>filefind</icon>
+	<name>Find in this folder</name>
+	<unique-id>1556291287989281-4</unique-id>
+	<command>catfish --path=%f</command>
+	<description>Search for files within this folder</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>changes-prevent-symbolic</icon>
+	<name>Encrypt with GPG</name>
+	<unique-id>1556291287989351-5</unique-id>
+	<command>notify-send gpg &quot;$(gpg2 -cv --yes %f 2&gt;&amp;1)&quot;</command>
+	<description>Encrypt with a symmetric cipher using a passphrase</description>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>edit-clear-all-symbolic</icon>
+	<name>Secure delete</name>
+	<unique-id>1556291287989408-6</unique-id>
+	<command>zenity --question; if [ $? = 0 ]; then srm -rfll %F; fi</command>
+	<description>Delete files using secure remove function</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

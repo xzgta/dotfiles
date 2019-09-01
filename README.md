@@ -1,4 +1,5 @@
-# lagisyantik
+# WELCOME
+# MY DOTFILES
 Don't run setup , just do it manual :v
 Simple Dotfiles :v
 
